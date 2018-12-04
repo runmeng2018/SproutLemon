@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: banana
+
+server:
+  port: 3001 #端口号
+
+eureka:
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:2001/eureka/
+    
+    

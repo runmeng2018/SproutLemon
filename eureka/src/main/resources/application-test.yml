@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: apple
+
+server:
+  port: 2001 #端口号
+
+eureka:
+  instance:
+    hostname: localhost # 应用的主机名称
+  client: 
+    register-with-eureka: false # 自身进作为服务器，不作为客户端
+    fetch-registry: false # 无需注册自己
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    
+    
